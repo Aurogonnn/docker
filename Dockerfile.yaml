@@ -1,0 +1,5 @@
+FROM ubuntu:latest
+RUN sudo apt update && sudo apt upgrade -y
+RUN mkdir ~/test && cd ~/test
+RUN wget https://www.1c-bitrix.ru/download/scripts/bitrixsetup.php
+RUN ~/test/bitrixsetup.php
